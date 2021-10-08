@@ -1,2 +1,3 @@
-Published Link:
-https://github.com/latteslurp/Lab2
+Published link:
+
+https://latteslurp.github.io/fa21-cse110-lab3/
