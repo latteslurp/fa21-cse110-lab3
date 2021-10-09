@@ -1,0 +1,173 @@
+*{
+    /* font-family: serif; */
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+body{
+    align-content: center;
+    border-style: double;
+    border-color:rgb(97, 0, 0);
+    border-width: 0.15rem;
+    border-radius: 10px;
+}
+
+/* all div */
+div{
+    position: static;
+    max-width: fit-content;
+    min-width: 70%;
+    margin: 10px 10px 10px 10px;
+    padding: 1px 1px 1px 1px;
+}
+
+/* all h2 */
+h2{
+    color: black;
+    text-align: center;
+    background-color: rgb(173, 142, 0);
+}
+
+/*  all li and p element */
+li, p{
+    font-size: .45cm;
+    text-decoration: initial;
+}
+
+/* header title */
+#header-title{
+    color:rgb(186, 18, 63);
+    background: #b6aeff;
+}
+
+#header-title:hover{
+    color:hsl(189, 82%, 40%);
+    background: greenyellow;
+    font-size: 2.5em;
+}
+
+/* span that wraps hello image */
+span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+/* hello image */
+img[alt="heloSign"]{
+    display: inline-block;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    margin-left: 12px;
+    margin-right: 12px;
+    padding-top: 1px;
+    padding-left: 1px;
+    padding-right: 1px;
+    padding-bottom: 1px;
+    position: sticky;
+}
+
+@media screen and (max-width: 768px) {
+    span img{
+        height: 40vh;
+        width: auto;
+    }
+}
+
+/* section nav */
+.section-nav{
+    font-size: 15pt;
+    margin:auto;
+    padding: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+}
+
+@media screen and (max-width: 768px){
+    .section-nav{
+        display: block;
+    }
+    hr nav > ul{
+        font-size: 10vw;
+    }
+}
+
+/* child combinator */
+nav > h2{
+    background-color: rgb(139, 132, 236);
+}
+
+/* general sibling */
+h2 ~ p {
+    color: rgb(97, 0, 0);
+}
+
+/* adjacent sibling */
+span + p {
+    background-color: rgb(162, 243, 225);
+}
+
+/* combine selector */
+/* attendance members */
+ul.team-members{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.present-member{
+    background-color: rgb(139, 212, 143);
+}
+
+.absent-member{
+    background-color: rgb(236, 97, 97);
+}
+
+@media screen and (max-width: 768px){
+    ul.team-members{
+        display: block;
+    }
+    hr nav > ul{
+        font-size: 10vw;
+    }
+}
+
+/* gallery pictures */
+#gallery-pictures{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width: 768px){
+    #gallery-pictures img{
+        height: 30vh;
+        width: auto;
+    }
+}
+
+/* unrelated section */
+#unrelated-content{
+    display: grid;
+    grid-template-columns: 500px 350px 5px;
+    grid-template-rows: 70px 70px 30px; 
+    column-gap: 10px;
+    row-gap: 20px;
+}
+
+.form-example{
+    display: grid;
+    grid-template-columns: 100px 100px 100px 100px;
+    grid-template-rows: auto;
+}
+
+@media screen and (max-width: 768px){
+    #unrelated-content{
+        display: inline-block;
+    }
+    .form-example{
+        grid-template-columns: 20vw 15vw 20vw 15vw;
+    }
+}
